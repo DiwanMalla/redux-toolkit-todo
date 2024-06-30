@@ -9,7 +9,12 @@ const Footer = () => {
     todo.completed === true ? completed++ : completed;
   });
   return (
-    <div className="text-2xl mt-3">{`Total completed Items: ${completed}`}</div>
+    <div>
+      <div className="text-2xl mt-3">{`Total completed Items: ${completed}`}</div>
+      <div className="text-center text-2xl">
+        Developed by <span className="font-bold">Diwan Malla</span>
+      </div>
+    </div>
   );
 };
 
