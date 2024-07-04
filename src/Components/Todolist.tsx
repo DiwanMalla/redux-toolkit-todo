@@ -15,7 +15,7 @@ const Todolist = () => {
 
   //@ts-expect-error
   const handleRemove = (id) => {
-    dispatch(remove({ id }));
+    dispatch(remove(id));
   };
   //@ts-expect-error
   const handleToggle = (id) => {
