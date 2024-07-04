@@ -24,8 +24,10 @@ export const TodoSlice = createSlice({
       }
     },
     edit(state, action) {
-      const todo = state.find((item) => item.id === action.payload);
+      //@ts-expect-error
+      const todo = state.find((item) => item.id === action.payload.id);
       if (todo) {
+        //@ts-expect-error
         todo.title = action.payload.title;
       }
     },
